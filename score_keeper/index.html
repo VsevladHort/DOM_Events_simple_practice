@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title-card">
+            <img src="https://media.sketchfab.com/models/8d14e0c2080f4f14a9b81e45b65bf315/thumbnails/eb05cb13fb514aee9bb8603deb0ba0a8/05dba74136434d00b533c26ebc9034c9.jpeg"
+                alt="ping-pong game image" class="title-image">
+            <h1 class="title-heading">Ping Pong Score Keeper</h1>
+        </div>
+        <div class="game-card">
+            <span class="game-score-display">0 to 0</span>
+            <span class="game-explanation">Use the buttons below to keep score</span>
+            <div class="game-rule-set-container">
+                <label for="rule-select">Playing to</label>
+                <select name="max" id="rule-select">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+        </div>
+        <div class="game-button-container">
+            <button class="game-control-btn" id="game-plus-one-btn">+1 Player One</button>
+            <button class="game-control-btn" id="game-plus-two-btn">+1 Player Two</button>
+            <button class="game-control-btn" id="game-reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
